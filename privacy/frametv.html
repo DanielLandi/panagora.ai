@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame TV — Privacy Policy</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+            background: #fff;
+            color: #222;
+            line-height: 1.6;
+        }
+        h1 { font-size: 1.8rem; margin-bottom: 0.25rem; }
+        h2 { font-size: 1.2rem; margin-top: 2rem; color: #333; }
+        .updated { color: #888; font-size: 0.9rem; margin-bottom: 2rem; }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+        th, td { text-align: left; padding: 0.5rem 0.75rem; border-bottom: 1px solid #eee; }
+        th { font-weight: 600; color: #555; }
+        a { color: #5038d1; }
+        @media (prefers-color-scheme: dark) {
+            body { background: #0a0a0a; color: #e0e0e0; }
+            h2 { color: #ccc; }
+            th { color: #aaa; }
+            th, td { border-color: #333; }
+            a { color: #8b7cf7; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Frame TV — Last updated: March 29, 2026</p>
+
+    <h2>Overview</h2>
+    <p>Frame TV is an iOS app that controls a Samsung The Frame TV over your local network. Your privacy is important to us. This policy explains what data the app accesses and how it is handled.</p>
+
+    <h2>Data We Do NOT Collect</h2>
+    <ul>
+        <li>We do not collect, store, or transmit any personal data to external servers</li>
+        <li>We do not use analytics, tracking, or advertising frameworks</li>
+        <li>We do not create user accounts or require registration</li>
+        <li>We have no backend servers that receive your data</li>
+    </ul>
+
+    <h2>Data Stored on Your Device</h2>
+    <p>The following data is stored locally on your device only and never leaves it:</p>
+    <ul>
+        <li><strong>TV connection settings</strong> (IP address, MAC address) — stored in app preferences</li>
+        <li><strong>OpenAI API key</strong> — stored securely in the iOS Keychain, encrypted at rest, never transmitted to any server other than OpenAI's API</li>
+        <li><strong>Art groups and generated images</strong> — stored in the app's local documents directory</li>
+        <li><strong>App preferences</strong> (theme, slideshow settings, parallelism) — stored in UserDefaults</li>
+    </ul>
+
+    <h2>Network Access</h2>
+    <p>The app makes network connections in the following cases:</p>
+    <ul>
+        <li><strong>Local network (LAN):</strong> The app connects to your Samsung Frame TV over your local Wi-Fi network using WebSocket (port 8002) to control art mode, upload images, and manage slideshows. This traffic stays within your home network.</li>
+        <li><strong>OpenAI API</strong> (optional): If you provide an OpenAI API key, the app sends photos to OpenAI's image editing API (api.openai.com) to generate artistic transforms. Only the specific photos you select for transformation are sent. See <a href="https://openai.com/privacy">OpenAI's privacy policy</a> for how they handle image data.</li>
+    </ul>
+
+    <h2>Photos Library Access</h2>
+    <p>The app requests access to your Photos library so you can browse and select photos for transformation or upload to your TV. Photos are read on-demand and are not copied or cached beyond what you explicitly save to an art group.</p>
+
+    <h2>Third-Party Services</h2>
+    <table>
+        <tr><th>Service</th><th>Purpose</th><th>Data Sent</th><th>When</th></tr>
+        <tr><td>OpenAI API</td><td>AI image transformation</td><td>Selected photos + text prompt</td><td>Only when you initiate a transform</td></tr>
+    </table>
+    <p>No other third-party services, SDKs, or analytics tools are used.</p>
+
+    <h2>Children's Privacy</h2>
+    <p>This app does not knowingly collect any data from children under 13.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>We may update this privacy policy from time to time. Changes will be reflected in the "Last updated" date above.</p>
+
+    <h2>Contact</h2>
+    <p>If you have questions about this privacy policy, please open an issue at <a href="https://github.com/DanielLandi/FrameTV">github.com/DanielLandi/FrameTV</a>.</p>
+</body>
+</html>
