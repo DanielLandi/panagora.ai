@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      var t = localStorage.getItem('{{THEME_KEY}}');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <title>Terms of Service — {{APP_NAME}}</title>
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="description" content="{{APP_NAME}} Terms of Service — license, disclaimers, governing law.">
+  <meta name="theme-color" content="#0e0f12">
+  <link rel="icon" type="image/png" href="/assets/favicon-transparent.png">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<!-- NOT legal advice. Review and edit every section before pointing the App Store at this URL. -->
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/">
+        <img src="/assets/icon-512.png" alt="">
+        <span>{{APP_NAME}}</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/#features">Features</a>
+        <a href="/privacy.html">Privacy</a>
+        <button class="theme-toggle" type="button" aria-label="Toggle light/dark theme" title="Toggle theme">
+          <span class="icon-moon" aria-hidden="true">🌙</span><span class="icon-sun" aria-hidden="true">☀️</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="legal">
+    <div class="container">
+      <h1>Terms of Service</h1>
+      <p class="updated"><strong>{{APP_NAME}}</strong> — Last updated: {{LAST_UPDATED}}</p>
+
+      <!-- COMMON -->
+      <h2>1. Acceptance</h2>
+      <p>
+        By downloading, installing, or using the {{APP_NAME}} iOS app
+        ("the app"), you agree to these Terms of Service. If you do not
+        agree, do not use the app.
+      </p>
+
+      <!-- COMMON -->
+      <h2>2. License</h2>
+      <p>
+        {{APP_NAME}} grants you a personal, non-exclusive, non-transferable,
+        revocable license to install and use the app on Apple devices you
+        own or control, in accordance with Apple's App Store Terms of
+        Service. You may not redistribute, reverse-engineer, or modify the
+        app except as permitted by applicable law.
+      </p>
+
+      <!-- ════════════════════════════════════════════════════════════════ -->
+      <!-- APP-SPECIFIC: include ONLY if the app generates AI content.       -->
+      <!-- Otherwise delete this section and renumber.                       -->
+      <!-- ════════════════════════════════════════════════════════════════ -->
+      <h2>3. AI-generated content</h2>
+      <p>
+        The app generates and transforms content using third-party AI
+        providers. AI output may be inaccurate, biased, or unexpected. You
+        are responsible for how you use generated content, including
+        compliance with copyright, publicity, and any applicable laws. Do
+        not use the app to generate content that infringes the rights of
+        others or violates the policies of the underlying AI provider.
+      </p>
+
+      <!-- ════════════════════════════════════════════════════════════════ -->
+      <!-- APP-SPECIFIC: list this app's third-party providers, or delete.   -->
+      <!-- ════════════════════════════════════════════════════════════════ -->
+      <h2>4. Third-party services</h2>
+      <p>
+        Some features require third-party services ({{PROVIDER_LIST}}). When
+        you use such features, you are also bound by the terms and privacy
+        policies of the respective provider. {{APP_NAME}} is not responsible
+        for the availability, accuracy, or content of third-party services.
+        When you supply your own API key, you are responsible for any costs
+        incurred with that provider.
+      </p>
+
+      <!-- ════════════════════════════════════════════════════════════════ -->
+      <!-- APP-SPECIFIC: include ONLY if the app sells IAP credits/subs.     -->
+      <!-- Otherwise delete this section and renumber.                       -->
+      <!-- ════════════════════════════════════════════════════════════════ -->
+      <h2>5. Credits &amp; in-app purchases</h2>
+      <p>
+        {{IAP_PRODUCT}} is an optional paid service billed via Apple's
+        In-App Purchase system. Purchases are non-refundable except where
+        required by applicable law (including Apple's refund process), and
+        may expire as disclosed at the point of purchase.
+      </p>
+
+      <!-- COMMON -->
+      <h2>6. Acceptable use</h2>
+      <p>You agree not to:</p>
+      <ul>
+        <li>Use the app to generate or distribute content that is unlawful, harassing, defamatory, or that infringes the rights of others.</li>
+        <li>Attempt to circumvent rate limits, usage allocation, or other access controls.</li>
+        <li>Interfere with or attempt to compromise the integrity of the app or other users' use of the app.</li>
+      </ul>
+
+      <!-- COMMON -->
+      <h2>7. Disclaimer of warranties</h2>
+      <p>
+        The app is provided "as is" and "as available," without warranties
+        of any kind, whether express or implied, including but not limited
+        to merchantability, fitness for a particular purpose, and
+        non-infringement. {{APP_NAME}} does not warrant that the app will be
+        uninterrupted or error-free.
+      </p>
+
+      <!-- COMMON -->
+      <h2>8. Limitation of liability</h2>
+      <p>
+        To the maximum extent permitted by law, {{APP_NAME}} and its
+        operators shall not be liable for any indirect, incidental, special,
+        consequential, or punitive damages arising out of or related to your
+        use of the app, including loss of data or loss of profits. Total
+        liability for any claim shall not exceed the amount you paid in the
+        six months preceding the claim, or USD $10, whichever is greater.
+      </p>
+
+      <!-- COMMON -->
+      <h2>9. Termination</h2>
+      <p>
+        {{APP_NAME}} may suspend or terminate access to paid services for
+        violation of these Terms. You may stop using the app at any time by
+        uninstalling it.
+      </p>
+
+      <!-- ════════════════════════════════════════════════════════════════ -->
+      <!-- COMMON default (Daniel's jurisdiction). Change only if needed.    -->
+      <!-- ════════════════════════════════════════════════════════════════ -->
+      <h2>10. Governing law</h2>
+      <p>
+        These Terms are governed by the laws of the State of
+        {{GOVERNING_STATE}}, United States, without regard to conflict of
+        laws principles. Disputes arising under these Terms shall be resolved
+        exclusively in the courts located in {{GOVERNING_VENUE}}, and you
+        consent to that jurisdiction and venue.
+      </p>
+
+      <!-- COMMON -->
+      <h2>11. Changes to these Terms</h2>
+      <p>
+        {{APP_NAME}} may update these Terms from time to time. Material
+        changes will be reflected in the "Last updated" date above.
+        Continued use of the app after changes take effect constitutes
+        acceptance of the revised Terms.
+      </p>
+
+      <!-- COMMON -->
+      <h2>12. Contact</h2>
+      <p>Questions about these Terms? Email <a href="mailto:{{SUPPORT_EMAIL}}">{{SUPPORT_EMAIL}}</a>.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>&copy; {{YEAR}} Daniel Landi · {{APP_NAME}}</div>
+      <div>
+        <a href="/privacy.html">Privacy</a>
+        &nbsp;·&nbsp;
+        <a href="/terms.html">Terms</a>
+        &nbsp;·&nbsp;
+        <a href="mailto:{{SUPPORT_EMAIL}}">Support</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.theme-toggle').addEventListener('click', function () {
+      var root = document.documentElement;
+      var current = root.getAttribute('data-theme') || 'light';
+      var next = current === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('{{THEME_KEY}}', next);
+    });
+  </script>
+
+</body>
+</html>
