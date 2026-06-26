@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      var t = localStorage.getItem('{{THEME_KEY}}');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <title>Privacy Policy — {{APP_NAME}}</title>
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="description" content="{{APP_NAME}} privacy policy: what data the app accesses and how it is handled.">
+  <meta name="theme-color" content="#0e0f12">
+  <link rel="icon" type="image/png" href="/assets/favicon-transparent.png">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/">
+        <img src="/assets/icon-512.png" alt="">
+        <span>{{APP_NAME}}</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="/#features">Features</a>
+        <a href="/privacy.html" aria-current="page">Privacy</a>
+        <button class="theme-toggle" type="button" aria-label="Toggle light/dark theme" title="Toggle theme">
+          <span class="icon-moon" aria-hidden="true">🌙</span><span class="icon-sun" aria-hidden="true">☀️</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="legal">
+    <div class="container">
+      <h1>Privacy Policy</h1>
+      <p class="updated"><strong>{{APP_NAME}}</strong> — Last updated: {{LAST_UPDATED}}</p>
+
+      <!-- ════════════════════════════════════════════════════════════════ -->
+      <!-- APP-SPECIFIC: one-line description of what the app does.          -->
+      <!-- ════════════════════════════════════════════════════════════════ -->
+      <h2>Overview</h2>
+      <p>
+        {{APP_NAME}} is {{APP_ONE_LINER}}. Your privacy is important to us.
+        This policy explains what data the app accesses and how it is handled.
+      </p>
+
+      <!-- ════════════════════════════════════════════════════════════════ -->
+      <!-- COMMON: keep as-is unless the app genuinely does one of these.    -->
+      <!-- ════════════════════════════════════════════════════════════════ -->
+      <h2>Data we do <em>not</em> collect</h2>
+      <ul>
+        <li>We do not collect, store, or transmit personal data to external servers beyond what's necessary for the features you use.</li>
+        <li>We do not use analytics, tracking, or advertising frameworks.</li>
+        <li>We do not require user accounts for local-only use.</li>
+      </ul>
+
+      <!-- ════════════════════════════════════════════════════════════════ -->
+      <!-- APP-SPECIFIC: enumerate what this app stores locally on-device.   -->
+      <!-- Delete rows that don't apply; add rows the app actually uses.     -->
+      <!-- ════════════════════════════════════════════════════════════════ -->
+      <h2>Data stored on your device</h2>
+      <p>The following data is stored locally on your device only and never leaves it unless you opt into a feature that needs it:</p>
+      <ul>
+        <li><strong>API keys you provide</strong> (if any) — stored securely in the iOS Keychain, encrypted at rest, never transmitted to any server other than the corresponding provider's API.</li>
+        <li><strong>App preferences</strong> (theme, settings) — stored in UserDefaults.</li>
+        <!-- APP-SPECIFIC: add app data here, e.g. saved projects, connection settings -->
+      </ul>
+
+      <!-- ════════════════════════════════════════════════════════════════ -->
+      <!-- APP-SPECIFIC: every outbound network connection the app makes.    -->
+      <!-- If the app is fully offline, replace this whole section with:     -->
+      <!--   <p>This app makes no outbound network connections.</p>          -->
+      <!-- ════════════════════════════════════════════════════════════════ -->
+      <h2>Network access</h2>
+      <p>The app makes network connections in the following cases:</p>
+      <ul>
+        <li><strong>{{PROVIDER_NAME}}</strong> (optional): If you {{CONDITION}}, the app sends {{DATA_SENT}} to {{PROVIDER_ENDPOINT}}. See <a href="{{PROVIDER_PRIVACY_URL}}">{{PROVIDER_NAME}}'s privacy policy</a>.</li>
+        <!-- APP-SPECIFIC: repeat one <li> per provider / endpoint -->
+      </ul>
+
+      <!-- ════════════════════════════════════════════════════════════════ -->
+      <!-- APP-SPECIFIC: include ONLY if the app touches the Photos library. -->
+      <!-- Otherwise delete this whole section.                              -->
+      <!-- ════════════════════════════════════════════════════════════════ -->
+      <h2>Photos library access</h2>
+      <p>
+        The app requests access to your Photos library so you can {{PHOTOS_PURPOSE}}.
+        Photos are read on-demand and are not copied or cached beyond what you
+        explicitly save.
+      </p>
+
+      <!-- ════════════════════════════════════════════════════════════════ -->
+      <!-- APP-SPECIFIC: one row per third-party service the app talks to.   -->
+      <!-- Must match the "Network access" list above. If none, replace the  -->
+      <!-- table with: <p>No third-party services, SDKs, or analytics tools  -->
+      <!-- are used.</p>                                                     -->
+      <!-- ════════════════════════════════════════════════════════════════ -->
+      <h2>Third-party services</h2>
+      <table>
+        <thead>
+          <tr><th>Service</th><th>Purpose</th><th>Data sent</th><th>When</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{PROVIDER_NAME}}</td>
+            <td>{{PROVIDER_PURPOSE}}</td>
+            <td>{{DATA_SENT}}</td>
+            <td>{{WHEN_SENT}}</td>
+          </tr>
+          <!-- APP-SPECIFIC: repeat one <tr> per service -->
+        </tbody>
+      </table>
+      <p>No other third-party services, SDKs, or analytics tools are used.</p>
+
+      <!-- ════════════════════════════════════════════════════════════════ -->
+      <!-- COMMON: keep as-is.                                               -->
+      <!-- ════════════════════════════════════════════════════════════════ -->
+      <h2>Children's privacy</h2>
+      <p>This app does not knowingly collect any data from children under 13.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>We may update this privacy policy from time to time. Changes will be reflected in the "Last updated" date above.</p>
+
+      <h2>Contact</h2>
+      <p>Questions about this policy? Email <a href="mailto:{{SUPPORT_EMAIL}}">{{SUPPORT_EMAIL}}</a>.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>&copy; {{YEAR}} Daniel Landi · {{APP_NAME}}</div>
+      <div>
+        <a href="/privacy.html">Privacy</a>
+        &nbsp;·&nbsp;
+        <a href="/terms.html">Terms</a>
+        &nbsp;·&nbsp;
+        <a href="mailto:{{SUPPORT_EMAIL}}">Support</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.theme-toggle').addEventListener('click', function () {
+      var root = document.documentElement;
+      var current = root.getAttribute('data-theme') || 'light';
+      var next = current === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('{{THEME_KEY}}', next);
+    });
+  </script>
+
+</body>
+</html>
