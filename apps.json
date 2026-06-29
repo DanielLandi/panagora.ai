@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "apps": [
+    { "id": "tvcanvas", "bundleId": "com.daniellandi.tvcanvas",
+      "title": "TVCanvas", "subtitle": "AI art on your Samsung Frame, Cast, Roku & AirPlay TVs",
+      "icon": "more-app-tvcanvas", "appStoreURL": "" },
+    { "id": "apps", "bundleId": "com.daniellandi.tvcanvas.apps",
+      "title": "TVCanvas Apps", "subtitle": "Whiteboard, counters, queues & event boards on your TV",
+      "icon": "more-app-apps", "appStoreURL": "" },
+    { "id": "dashboards", "bundleId": "com.daniellandi.tvcanvas.dashboards",
+      "title": "TVCanvas Dashboards", "subtitle": "Weather, stocks, flights & transit boards on your TV",
+      "icon": "more-app-dashboards", "appStoreURL": "" },
+    { "id": "transform", "bundleId": "com.daniellandi.tvcanvas.transform",
+      "title": "TVCanvas Transform", "subtitle": "Create & transform images, export slideshow video",
+      "icon": "more-app-transform", "appStoreURL": "" }
+  ]
+}
