@@ -2,7 +2,7 @@
   "version": 1,
   "apps": [
     { "id": "tvcanvas", "bundleId": "com.daniellandi.tvcanvas",
-      "title": "TVCanvas", "subtitle": "AI art on your Samsung Frame, Cast, Roku & AirPlay TVs",
+      "title": "TVCanvas", "subtitle": "Apps, Dashboards & Transform — all in one app",
       "icon": "more-app-tvcanvas", "appStoreURL": "" },
     { "id": "apps", "bundleId": "com.daniellandi.tvcanvas.apps",
       "title": "TVCanvas Apps", "subtitle": "Whiteboard, counters, queues & event boards on your TV",
