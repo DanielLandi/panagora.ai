@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="description" content="Privacidade e exclusão de dados no Panagora Integrations.">
+  <title>Privacidade · Panagora Integrations</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, sans-serif; line-height: 1.65; }
+    body { max-width: 760px; margin: auto; padding: 32px 22px 64px; }
+    h1, h2, h3 { line-height: 1.25; }
+    h2 { margin-top: 2rem; }
+    a { color: light-dark(#174ea6, #a8c7fa); overflow-wrap: anywhere; }
+    aside { border: 2px solid #b7791f; padding: 16px; border-radius: 8px; }
+    .meta { opacity: .8; }
+    hr { margin: 3rem 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <p><a href="../index.html">Panagora</a> / Integrations</p>
+    <h1>Política de privacidade</h1>
+    <p class="meta">Panagora Integrations · Atualizada em 13 de setembro de 2026</p>
+    <p><a href="#english" lang="en">English version</a></p>
+  </header>
+  <aside aria-label="Escopo de testes">
+    <strong>Integração de testes para usuários autorizados.</strong>
+    Utilize dados fictícios ou o mínimo necessário para o teste. Não envie informações
+    sensíveis. Não há exclusão automática geral após 30 dias; veja os limites abaixo.
+  </aside>
+  <main>
+    <section aria-label="Português">
+      <h2>1. Escopo e responsabilidade</h2>
+      <p>Panagora Integrations conecta mensagens do WhatsApp a sistemas de atendimento,
+        CRM e assistentes de inteligência artificial. Esta política descreve o tratamento
+        de dados por essa integração, não por todos os produtos da Panagora.</p>
+      <p>Panagora Integrations é operado por Daniel Landi, desenvolvedor independente.
+        Panagora é o nome utilizado para este projeto, não uma empresa registrada.</p>
+      <p>Esta versão cobre testes internos autorizados, inclusive integrações com sistemas
+        de CRM de testes. Não descreve um serviço de atendimento em produção.
+        O uso em produção por empresas clientes exige definição das responsabilidades
+        e atualização das informações de privacidade aplicáveis.</p>
+      <h2>2. Dados tratados e finalidades</h2>
+      <ul>
+        <li><strong>Mensagens e identificação:</strong> número do WhatsApp, nome de perfil
+          disponibilizado pelo serviço, conteúdo enviado, identificadores de mensagens,
+          horários e estados de entrega, para receber, encaminhar e responder mensagens.</li>
+        <li><strong>CRM e contexto:</strong> registros acessíveis ao usuário autorizado,
+          histórico de conversas, resumos, memórias persistentes do assistente e resultados de ações, para dar continuidade
+          ao atendimento e executar tarefas solicitadas.</li>
+        <li><strong>Operação e segurança:</strong> registros técnicos de requisições, erros
+          e acesso, para autenticação, prevenção de abuso e diagnóstico de falhas.</li>
+      </ul>
+      <p>Arquivos ou mídias enviados podem ser recebidos pela infraestrutura de mensagens;
+        quando o processamento de mídia está habilitado, arquivos podem ser baixados e
+        armazenados como documentos e anexos no CRM. Evite enviar senhas, códigos
+        de autenticação, dados de pagamento ou informações sensíveis desnecessárias.</p>
+      <h2>3. Inteligência artificial e acesso humano</h2>
+      <p>Nos fluxos com IA habilitada, mensagens e o contexto de CRM necessário podem ser
+        enviados ao provedor de IA para gerar respostas, resumos e solicitações de ações.
+        As respostas podem conter erros. Pessoas autorizadas responsáveis pelo atendimento
+        ou pela operação podem acessar os dados conforme suas permissões.</p>
+      <h2>4. Serviços envolvidos</h2>
+      <ul>
+        <li><strong>Meta / WhatsApp:</strong> transporte de mensagens pela WhatsApp Cloud API.</li>
+        <li><strong>Infraestrutura de CRM e integração:</strong> servidores hospedados na
+          Vultr e conectividade e proteção fornecidas pela Cloudflare.</li>
+        <li><strong>Anthropic:</strong> processamento dos fluxos de assistente de IA habilitados.</li>
+        <li><strong>OpenAI:</strong> processamento de solicitações de geração de imagens,
+          quando esse recurso do CRM é utilizado; não é necessário para toda conversa.</li>
+        <li><strong>Cloudflare Email Routing e Google/Gmail:</strong> encaminhamento e
+          recebimento das mensagens enviadas ao contato de privacidade.</li>
+        <li><strong>GitHub Pages:</strong> hospedagem desta página, com tratamento dos dados
+          técnicos de acesso pelo provedor.</li>
+      </ul>
+      <p>O processamento por fornecedores pode ocorrer fora do seu país. Seus próprios
+        termos e políticas também regem os serviços que prestam. A retenção de dados pelo
+        provedor de IA é distinta do armazenamento no CRM; veja as
+        <a href="https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data">informações de retenção da Anthropic</a>.
+        Esta política não promete retenção zero nos fornecedores.</p>
+      <h2>5. Armazenamento, retenção e proteção</h2>
+      <p>Mensagens, contexto e registros operacionais podem ser armazenados nos sistemas de
+        integração e CRM; não ficam apenas no seu telefone. O acesso é controlado por
+        autenticação e permissões. Nenhum sistema oferece segurança absoluta.</p>
+      <p>Na configuração de testes atualmente verificada:</p>
+      <ul>
+        <li><strong>Conversas de IA:</strong> uma rotina diária marca para exclusão as
+          conversas sem alteração há mais de 12 meses. Essa exclusão lógica não equivale
+          à remoção física imediata de todas as cópias.</li>
+        <li><strong>Mensagens originais, anexos e memórias:</strong> são armazenados
+          separadamente. Não há um prazo único de exclusão automática verificado para
+          esses registros; podem permanecer até uma remoção específica. Iniciar uma nova
+          conversa ou apagar a memória do assistente não apaga todos os registros de WhatsApp.</li>
+        <li><strong>Falhas de entrega ao CRM:</strong> mensagens podem ficar em uma fila
+          local para novas tentativas. Arquivos marcados como falha definitiva são elegíveis
+          à limpeza após 30 dias; isso não é o prazo de retenção de todas as mensagens.</li>
+        <li><strong>Registros técnicos e de uso:</strong> logs dos serviços de integração
+          e IA são rotacionados por tamanho, não por um número fixo de dias. Registros de
+          consumo e erros no CRM são separados e não seguem a limpeza de conversas.</li>
+        <li><strong>Backups:</strong> a rotina programada copia o banco de dados e arquivos
+          diariamente e remove os arquivos de backup local com mais de 30 dias. Uma cópia
+          de um registro excluído pode permanecer em backup até sua expiração; o prazo
+          depende da execução bem-sucedida da rotina.</li>
+      </ul>
+      <p>Registros sem limpeza automática podem permanecer até uma revisão e remoção
+        manual, considerando a finalidade do teste, o diagnóstico de falhas, a segurança
+        e pedidos de exclusão. Não há um prazo máximo geral de retenção implementado.
+        Testes com dados descartáveis validaram remoção de registros selecionados,
+        arquivos e memórias; não validaram a exclusão completa de dados de uma pessoa,
+        cópias de backup ou sistemas dos fornecedores.</p>
+      <h2 id="data-deletion">6. Seus pedidos e exclusão de dados</h2>
+      <p>O canal para dúvidas e pedidos de acesso, correção ou exclusão é
+        <a href="mailto:privacy@panagora.ai">privacy@panagora.ai</a>.</p>
+      <p>Ao enviar um pedido, informe o número do WhatsApp com código do país, a empresa
+        com que conversou e o pedido desejado. Não envie senhas nem códigos de verificação.
+        Poderemos solicitar uma verificação proporcional de identidade e encaminhar o
+        pedido à empresa responsável pelos registros de CRM. Eventuais limitações legais
+        à exclusão deverão ser explicadas ao solicitante.</p>
+      <p>Bloquear o número ou apagar a conversa no WhatsApp não exclui automaticamente os
+        registros da integração, do CRM ou dos provedores. A exclusão desses registros
+        exige um pedido específico e sua análise.</p>
+      <h2>7. Crianças e adolescentes</h2>
+      <p>A integração se destina a usuários autorizados e ao atendimento empresarial, não
+        a serviços dirigidos a crianças. Caso o atendimento envolva dados de menores,
+        a empresa responsável deverá estabelecer as autorizações e proteções apropriadas.
+        Não envie dados de menores sem necessidade e autorização.</p>
+      <h2>8. Alterações</h2>
+      <p>A data de atualização aparece no início desta página. Mudanças relevantes
+        no tratamento de dados serão refletidas nesta página.</p>
+    </section>
+    <hr>
+    <section id="english" lang="en" aria-label="English">
+      <h2>Privacy policy — English</h2>
+      <p><strong>Test integration for authorized users.</strong> Updated September 13, 2026.
+        Use fictional data or the minimum necessary for testing; do not send sensitive
+        information. There is no general automatic deletion after 30 days.</p>
+      <h3>Scope and responsibility</h3>
+      <p>Panagora Integrations connects WhatsApp messages to customer-service systems,
+        CRM records and AI assistants. This policy covers this integration, not every
+        Panagora product. Panagora Integrations is operated by Daniel Landi, an independent
+        developer. Panagora is the name used for this project, not a registered company.
+        This version covers authorized internal tests, including integrations with
+        staging CRM systems, not a production customer-service offering. Production
+        use by client businesses requires defining responsibilities and updating the
+        applicable privacy information.</p>
+      <h3>Information and uses</h3>
+      <p>We process WhatsApp numbers, available profile names, message contents, message
+        identifiers, timestamps and delivery states to receive, route and answer messages.
+        Authorized CRM records, conversation history, summaries, persistent assistant memories and action results provide
+        context and support requested tasks. Technical request, error and access logs
+        support authentication, abuse prevention and troubleshooting. Message infrastructure
+        may receive attachments; when media processing is enabled, files may be downloaded
+        and stored as CRM documents and attachments. Do not send
+        passwords, verification codes, payment details or unnecessary sensitive information.</p>
+      <h3>AI, people and providers</h3>
+      <p>When AI workflows are enabled, messages and necessary CRM context may be sent to
+        an AI provider to generate replies, summaries and action requests. AI can make
+        mistakes. Authorized service and operations personnel may access data according
+        to their permissions. Providers include Meta/WhatsApp for messaging, Vultr for
+        server hosting, Cloudflare for connectivity and protection, and Anthropic for
+        enabled AI-assistant workflows. OpenAI processes image-generation requests when
+        that CRM feature is used; it is not required for every conversation. Cloudflare
+        Email Routing and Google/Gmail forward and receive privacy-contact emails.
+        GitHub Pages hosts this policy and processes technical access data. Providers may
+        process data outside your country and apply their own terms and privacy policies.
+        AI-provider retention is separate from CRM storage; see
+        <a href="https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data">Anthropic's retention information</a>.
+        This policy does not promise zero retention by providers.</p>
+      <h3>Storage and retention</h3>
+      <p>Messages, context and operational records may be stored in the integration and
+        CRM systems, not only on your phone. Authentication and permissions control access;
+        no system is completely secure. In the currently verified test configuration:</p>
+      <ul>
+        <li><strong>AI conversations:</strong> a daily job soft-deletes conversations
+          unchanged for more than 12 months. This is not immediate physical erasure of all copies.</li>
+        <li><strong>Original messages, attachments and memories:</strong> these are stored
+          separately, with no single verified automatic deletion period. They may remain
+          until specifically removed. Starting a new conversation or clearing assistant
+          memory does not erase all WhatsApp records.</li>
+        <li><strong>Failed CRM delivery:</strong> messages may be queued locally for retries.
+          Files marked as permanently failed are eligible for cleanup after 30 days;
+          this is not the retention period for all messages.</li>
+        <li><strong>Technical and usage records:</strong> integration and AI service logs
+          rotate by size rather than a fixed number of days. CRM usage and error records
+          are separate and do not follow conversation cleanup.</li>
+        <li><strong>Backups:</strong> the scheduled routine copies the database and files
+          daily and removes local backup files older than 30 days. Deleted records may
+          remain in backups until expiry, subject to successful execution of that routine.</li>
+      </ul>
+      <p>Records without automatic cleanup may remain until manual review and removal,
+        considering the test purpose, troubleshooting, security and deletion requests.
+        No general maximum retention period has been implemented. Disposable
+        tests validated removal of selected records, files and memories, not complete
+        erasure of a person's data, backup copies or provider systems.</p>
+      <h3 id="data-deletion-en">Requests and deletion</h3>
+      <p>The contact for questions, access, correction and deletion requests is
+        <a href="mailto:privacy@panagora.ai">privacy@panagora.ai</a>. Include your
+        WhatsApp number with country code, the business you contacted and your request.
+        Do not send passwords or verification codes. Proportionate identity verification
+        may be needed, and requests may be referred to the business responsible for CRM
+        records. Any legal limits on deletion should be explained. Blocking a number or
+        deleting your WhatsApp chat does not automatically delete integration, CRM or
+        provider records; a separate request and assessment are needed.</p>
+      <h3>Children and updates</h3>
+      <p>This integration is for authorized users and business customer service, not a
+        service directed to children. Businesses handling minors' data must establish
+        appropriate permissions and safeguards. Do not provide minors' data without
+        necessity and authorization. This policy shows its update date and will
+        reflect material changes in data handling.</p>
+    </section>
+  </main>
+</body>
+</html>

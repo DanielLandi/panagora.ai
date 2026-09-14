@@ -10,6 +10,7 @@ Every external service, API, or paid account this repo depends on.
 | **GitHub** | Hosts this public repository. |
 | **GitHub Pages** | Hosts the site and public resources at `https://daniellandi.github.io/panagora.ai/`. |
 | **Cloudflare** | Domain registration and DNS for `panagora.ai`; managed separately from this repository. |
+| **Cloudflare Email Routing** | Routes email sent to the public privacy contact, `privacy@panagora.ai`. |
 
 ## Notes
 
