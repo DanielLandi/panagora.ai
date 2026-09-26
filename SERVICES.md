@@ -1,9 +1,10 @@
 # External services
 
-Every external service, API, or paid account this repo depends on.
+Public service dependencies for this site.
 
-> **Update rule:** any change that adds, removes, or re-keys an external
-> service must update this file in the same commit/PR.
+> **Update rule:** update this file in the same commit whenever a service
+> dependency changes. Keep credentials, billing details, and internal
+> administration notes out of this public repository.
 
 | Service | Purpose |
 |---|---|
@@ -12,10 +13,12 @@ Every external service, API, or paid account this repo depends on.
 | **Cloudflare** | Domain registration and DNS for `panagora.ai`; managed separately from this repository. |
 | **Cloudflare Email Routing** | Routes email sent to the public privacy contact, `privacy@panagora.ai`. |
 
-## Notes
+## Public resources
 
-- **Referenced, not depended on:** OpenAI / Google (Gemini) appear only as
-  `{{PROVIDER_*}}` placeholder examples in `_templates/legal/` — no keys, no
-  API usage in this repo.
-- `apps.json` is fetched by shipped TVCanvas iOS apps; its serving URL is a
-  de-facto dependency of those apps, not of this repo.
+- `apps.json` is consumed by TVCanvas apps. Preserve its field shape and
+  serving path.
+- `integrations/privacy.html` is the public Panagora Integrations privacy
+  policy. Preserve its URL for apps and services that link to it.
+- Providers named in privacy policies and legal templates describe the
+  corresponding apps' data handling; this static site makes no API calls
+  to those providers.

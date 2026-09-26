@@ -30,7 +30,7 @@ reference the issue from the commit). For sandboxed sessions pass
 
 ## Data contracts
 
-Two files here are contracts with other repos/apps — change them carefully:
+These public resources are contracts with other repos/apps — change them carefully:
 
 - **`apps.json`** — the canonical cross-promo app catalog (currently the four
   TVCanvas apps, bundle ids `com.daniellandi.tvcanvas*`). Consumed by the
@@ -44,6 +44,11 @@ Two files here are contracts with other repos/apps — change them carefully:
   the placeholder table, the TVCanvas reference implementation
   (`tvcanvas-site/`), and the one anti-drift rule (each app has exactly one
   canonical privacy document).
+
+- **`integrations/privacy.html`** — public privacy policy for Panagora
+  Integrations. Keep this path stable for apps and services that link to it.
+  It covers authorized integration tests, not every Panagora app. Other apps
+  should publish their own accurate policy using the legal templates above.
 
 ## Domain note
 
