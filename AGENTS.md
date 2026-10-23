@@ -13,12 +13,10 @@ for their privacy/terms pages. No build step, no runtime code.
 This is a **Tier C repo** (static site / config): edit and push to `main`
 directly. A push triggers a GitHub Pages rebuild.
 
-**Hosting status (verified 2026-07-19):** GitHub Pages is enabled and built,
-serving `main` root at `https://daniellandi.github.io/panagora.ai/`. It is
-**not wired to the `panagora.ai` apex** — the CNAME file was deleted (commit
-`20988cc`), so the custom domain is disconnected. Apps fetch `apps.json` by
-whatever URL they were shipped with; confirm the consumer URL before moving
-or renaming anything.
+**Hosting:** GitHub Pages serves `main` root at
+`https://daniellandi.github.io/panagora.ai/`; the `panagora.ai` apex is
+**not** wired to it (no CNAME). Apps fetch `apps.json` by whatever URL they
+were shipped with; confirm the consumer URL before moving or renaming anything.
 
 ## Work tracking
 
